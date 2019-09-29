@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import './successPage.dart';
 
-
 class Register extends StatelessWidget {
   final _formKey = GlobalKey<FormState>();
 
