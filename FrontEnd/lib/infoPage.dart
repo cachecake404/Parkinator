@@ -6,22 +6,23 @@ class InfoPage extends StatefulWidget {
 
   _InfoPageState createState() => _InfoPageState();
 }
-///HAHAHA
+
 class _InfoPageState extends State<InfoPage> {
+  Color _getColorFromHex(String hexColor) {
+    hexColor = hexColor.replaceAll("#", "");
+    return Color(int.parse('FF' + hexColor, radix: 16));
+  }
+
   @override
   Widget build(BuildContext context) {
     return (Scaffold(
       appBar: AppBar(
-        title: Text("Park Spot"),
+        title: Text("Parkinator Home"),
       ),
       body: Center(
         child: Container(
           child: Column(
             children: <Widget>[
-              Text(
-                "Welcome to Park Spot",
-                style: TextStyle(fontSize: 35, color: Colors.red[300]),
-              ),
               Spacer(flex: 1),
               RaisedButton(
                 child: Text("View Footage of Lot 50"),

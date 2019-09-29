@@ -14,7 +14,7 @@ class _AvailableParkingState extends State<AvailableParking> {
   int available;
   int total;
   Timer timer;
-  int n=1;
+  int n = 1;
   Image cameraImage = Image.network("http://hughboy.com:9999/img.png");
 
   void updateData() async {
@@ -26,7 +26,7 @@ class _AvailableParkingState extends State<AvailableParking> {
         booked = int.parse(response.body);
         available = total - booked;
         imageCache.clear();
-        n+=1;
+        n += 1;
         cameraImage =
             Image.network("http://hughboy.com:9999/img.png?k=" + n.toString());
       });
@@ -46,8 +46,7 @@ class _AvailableParkingState extends State<AvailableParking> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Parking Spots",
-            style: TextStyle(fontSize: 30, color: Colors.blue)),
+        title: Text("Parking Spots"),
       ),
       body: Center(
         child: Container(
@@ -55,9 +54,9 @@ class _AvailableParkingState extends State<AvailableParking> {
           children: <Widget>[
             Text("            Available Spots: $available",
                 style: TextStyle(fontSize: 25, color: Colors.green)),
+            cameraImage,
             Text("            Total Spots: $total",
                 style: TextStyle(fontSize: 25, color: Colors.blue)),
-            cameraImage,
           ],
         )),
       ),
