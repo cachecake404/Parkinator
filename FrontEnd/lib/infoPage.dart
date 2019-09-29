@@ -16,83 +16,97 @@ class _InfoPageState extends State<InfoPage> {
   @override
   Widget build(BuildContext context) {
     return (Scaffold(
-      appBar: AppBar(
-        title: Text("Parkinator Home"),
-      ),
-      body: Center(
-        child: Container(
-          child: Column(
-            children: <Widget>[
-              Spacer(flex: 1),
-              RaisedButton(
-                child: Text("View Footage of Lot 50"),
-                onPressed: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => AvailableParking()));
-                },
-              ),
-              Spacer(flex: 1),
-              RaisedButton(
-                onPressed: () {},
-                child: Text("View Footage of Lot 26"),
-                // onPressed: () {
-                //   Navigator.push(
-                //       context,
-                //       MaterialPageRoute(
-                //           builder: (context) => AvailableParking()));
-                // },
-              ),
-              Spacer(flex: 1),
-              RaisedButton(
-                onPressed: () {},
-                child: Text("View Footage of Lot 55"),
-                // onPressed: () {
-                //   Navigator.push(
-                //       context,
-                //       MaterialPageRoute(
-                //           builder: (context) => AvailableParking()));
-                // },
-              ),
-              Spacer(flex: 1),
-              RaisedButton(
-                onPressed: () {},
-                child: Text("View Footage of Lot F10"),
-                // onPressed: () {
-                //   Navigator.push(
-                //       context,
-                //       MaterialPageRoute(
-                //           builder: (context) => AvailableParking()));
-                // },
-              ),
-              Spacer(flex: 1),
-              RaisedButton(
-                onPressed: () {},
-                child: Text("View Footage of Lot 36"),
-                // onPressed: () {
-                //   Navigator.push(
-                //       context,
-                //       MaterialPageRoute(
-                //           builder: (context) => AvailableParking()));
-                // },
-              ),
-              Spacer(flex: 1),
-              RaisedButton(
-                onPressed: () {},
-                child: Text("View Footage of Lot F7"),
-                // onPressed: () {
-                //   Navigator.push(
-                //       context,
-                //       MaterialPageRoute(
-                //           builder: (context) => AvailableParking()));
-                // },
-              ),
-              Spacer(flex: 1),
-            ],
-          ),
+        appBar: AppBar(
+          title: Text("Parkinator Home"),
         ),
-      ),
-    ));
+        body: DecoratedBox(
+          position: DecorationPosition.background,
+          decoration: BoxDecoration(
+            color: Colors.black12,
+            image: DecorationImage(
+                image: AssetImage('./assets/dummyParking.png'),
+                fit: BoxFit.cover),
+          ),
+          child: Center(
+            child: Container(
+              child: Column(
+                children: <Widget>[
+                  Spacer(flex: 1),
+                  RaisedButton(
+                    child: Text("View Footage of Lot 50"),
+                    color: Colors.black38,
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => AvailableParking()));
+                    },
+                  ),
+                  Spacer(flex: 1),
+                  RaisedButton(
+                    onPressed: () {},
+                    child: Text("View Footage of Lot 26"),
+                    color: Colors.black38,
+                    // onPressed: () {
+                    //   Navigator.push(
+                    //       context,
+                    //       MaterialPageRoute(
+                    //           builder: (context) => AvailableParking()));
+                    // },
+                  ),
+                  Spacer(flex: 1),
+                  RaisedButton(
+                    onPressed: () {},
+                    child: Text("View Footage of Lot 55"),
+                    color: Colors.black38,
+                    // onPressed: () {
+                    //   Navigator.push(
+                    //       context,
+                    //       MaterialPageRoute(
+                    //           builder: (context) => AvailableParking()));
+                    // },
+                  ),
+                  Spacer(flex: 1),
+                  RaisedButton(
+                    onPressed: () {},
+                    child: Text("View Footage of Lot F10"),
+                    color: Colors.black38,
+                    // onPressed: () {
+                    //   Navigator.push(
+                    //       context,
+                    //       MaterialPageRoute(
+                    //           builder: (context) => AvailableParking()));
+                    // },
+                  ),
+                  Spacer(flex: 1),
+                  RaisedButton(
+                    onPressed: () {},
+                    child: Text("View Footage of Lot 36"),
+                    color: Colors.black38,
+                    // onPressed: () {
+                    //   Navigator.push(
+                    //       context,
+                    //       MaterialPageRoute(
+                    //           builder: (context) => AvailableParking()));
+                    // },
+                  ),
+                  Spacer(flex: 1),
+                  RaisedButton(
+                    onPressed: () {},
+                    child: Text("View Footage of Lot F7"),
+                    color: Colors.black38,
+                    // onPressed: () {
+                    //   Navigator.push(
+                    //       context,
+                    //       MaterialPageRoute(
+                    //           builder: (context) => AvailableParking()));
+                    // },
+                  ),
+                  Spacer(flex: 1),
+                ],
+              ),
+            ),
+          ),
+        )));
   }
 }
