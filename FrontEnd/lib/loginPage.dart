@@ -8,7 +8,7 @@ class Login extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: Text("Login to Park Spot")),
+        appBar: AppBar(title: Text("Login to Parkinator")),
         body: Center(
           child: Container(
               child: Column(
