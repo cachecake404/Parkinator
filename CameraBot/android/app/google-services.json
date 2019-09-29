@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "589543380441",
+    "firebase_url": "https://parkingfrontend.firebaseio.com",
+    "project_id": "parkingfrontend",
+    "storage_bucket": "parkingfrontend.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:589543380441:android:b843d70482402bf68435c8",
+        "android_client_info": {
+          "package_name": "com.example.camera_uploader"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "589543380441-agval6qp2uehdjhcacr92o2dug47r2t8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCstigrkm2JLlGGqr7uC2-OWHAQK47pQUw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "589543380441-agval6qp2uehdjhcacr92o2dug47r2t8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:589543380441:android:b3ab1d7f10d4fde68435c8",
+        "android_client_info": {
+          "package_name": "com.example.parking_front_end"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "589543380441-agval6qp2uehdjhcacr92o2dug47r2t8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCstigrkm2JLlGGqr7uC2-OWHAQK47pQUw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "589543380441-agval6qp2uehdjhcacr92o2dug47r2t8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
